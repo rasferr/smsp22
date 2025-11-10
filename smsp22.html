@@ -35,6 +35,7 @@
 
         .image-container img {
             border-radius: 10px;
+			max-height: 200px;
         }
 
         form {
@@ -73,12 +74,12 @@
         }
 
         button:hover {
-            background-color: #3C8E52;
+            background-color: #0B95D6;
         }
 
         /* Título em caixa */
         .title-box {
-            background-color: #3C8E52;
+            background-color: #0B95D6;
             padding: 20px;
             width: 100%;
             max-width: 600px;
@@ -92,12 +93,11 @@
 
         /* Rodapé em caixa */
         footer {
-            margin-top: auto;
             text-align: center;
             font-size: 1.2rem;
             color: rgba(255, 255, 255, 0.9);
             padding: 20px 10px;
-            background-color: #357d3f; /* Fundo mais suave */
+            background-color: #0B95D6;
             width: 100%;
             max-width: 600px;
             border-radius: 10px;
@@ -141,10 +141,10 @@
     <!-- Instruções no rodapé dentro de uma caixa -->
     <footer>
         <p><strong>𝗩𝗢𝗧𝗔 𝗣𝗢𝗥 𝗦𝗠𝗦 𝗣𝗔𝗥𝗔 𝟰𝟵𝟬𝟮</strong></p>
-        <p><strong>𝗢𝗣𝗟𝗘𝗜 𝗽𝟮𝟬 𝗖𝗖 𝗗𝗡[𝗮𝗮𝗮𝗮𝗺𝗺𝗱𝗱] 𝗮𝗰𝗲𝗶𝘁𝗼</strong></p>
+        <p><strong>𝗢𝗣𝗟𝗘𝗜 𝗽𝟮𝟮 𝗖𝗖 𝗗𝗡[𝗮𝗮𝗮𝗮𝗺𝗺𝗱𝗱] 𝗮𝗰𝗲𝗶𝘁𝗼</strong></p>
         <p><strong>CC:</strong> Número do Cartão de Cidadão</p>
         <p><strong>DN:</strong> Data de Nascimento no formato <em>AAAAMMDD</em></p>
-        <p><strong>Exemplo:</strong> 𝗢𝗣𝗟𝗘𝗜 𝗽𝟮2 12345678 19801205 𝗮𝗰𝗲𝗶𝘁𝗼</p>
+        <p><strong>Exemplo:</strong> 𝗢𝗣𝗟𝗘𝗜 𝗽𝟮𝟮 12345678 19801205 𝗮𝗰𝗲𝗶𝘁𝗼</p>
     </footer>
 
     <script>
@@ -158,7 +158,7 @@
             const formattedDate = birthDate.replace(/-/g, '');
 
             // Montar a mensagem no formato especificado
-            const message = `OPLEI p20 ${citizenCard} ${formattedDate} aceito`;
+            const message = `OPLEI p22 ${citizenCard} ${formattedDate} aceito`;
             const encodedMessage = encodeURIComponent(message);
 
             // Número fixo para envio
