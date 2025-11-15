@@ -145,7 +145,7 @@
     <!-- Instruções no rodapé dentro de uma caixa -->
     <footer>
         <p>SE ESTÁS NO COMPUTADOR, VOTA POR SMS PARA <strong>4902</strong></p>
-        <p><strong>𝗢𝗣𝗟𝗘𝗜 𝗽𝟮𝟮 𝗖𝗖 𝗗𝗡[𝗮𝗮𝗮𝗮𝗺𝗺𝗱𝗱] 𝗮𝗰𝗲𝗶𝘁𝗼</strong></p>
+        <p><strong>𝗢𝗣𝗟𝗘𝗜 𝗽𝟮1 𝗽𝟮𝟮 𝗖𝗖 𝗗𝗡[𝗮𝗮𝗮𝗮𝗺𝗺𝗱𝗱] 𝗮𝗰𝗲𝗶𝘁𝗼</strong></p>
         <p><strong>CC:</strong> Número do Cartão de Cidadão</p>
         <p><strong>DN:</strong> Data de Nascimento no formato <em>AAAAMMDD</em></p>
         <p><strong>Exemplo:</strong> <i>OPLEI p22 12345678 19801205 aceito</i></p>
@@ -162,7 +162,7 @@
             const formattedDate = birthDate.replace(/-/g, '');
 
             // Montar a mensagem no formato especificado
-            const message = `OPLEI p22 ${citizenCard} ${formattedDate} aceito`;
+            const message = `OPLEI p21 p22 ${citizenCard} ${formattedDate} aceito`;
             const encodedMessage = encodeURIComponent(message);
 
             // Número fixo para envio
